@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color: #dedede;
     color: #ffffff;
     position: static;
 
@@ -10,9 +10,9 @@ body {
 
 
 header {
-   
+    display: flex;
     background: #ffffff47;
-    align-items: normal;
+    align-items: center;
     justify-content: space-between;
    backdrop-filter: blur(10px);
     position: fixed;

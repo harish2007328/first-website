@@ -24,12 +24,14 @@
     border-radius: 50px;
     border: 1px solid #ffffff;
     backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
     
 
 }
 
 #hero .hero-content h1{
-  font-size: 60px;
+  font-size: 40px;
   font-family: fantasy;
   font-weight: 100;
   color: #bbbbbb;
