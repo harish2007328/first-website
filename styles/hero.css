@@ -8,6 +8,10 @@
   background: url('D:/first website/pics/bg01.jpg') no-repeat center center/cover;
   color: #1c1c1c;
   padding-bottom: 30px;
+  
+  justify-content: center;
+  align-items: center;
+  color: white;
 
 }
 #hero .hero-content {
