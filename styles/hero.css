@@ -5,7 +5,7 @@
    
   text-align: center;
   padding: 142px 50px;
-  background: url('D:/first website/pics/bg01.jpg') no-repeat center center/cover;
+  background: url('pics/background-image.png') no-repeat center center/cover;
   color: #1c1c1c;
   padding-bottom: 30px;
   
@@ -19,7 +19,7 @@
     text-align: left;
     padding-top: 20px;
     background-color: #ffffff47;
-   font-weight: 300;
+   font-weight: bold;
     border-radius: 50px;
     border: 1px solid #ffffff;
     backdrop-filter: blur(10px);
