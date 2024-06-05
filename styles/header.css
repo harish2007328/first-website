@@ -10,9 +10,9 @@ body {
 
 
 header {
-    display: flex;
+   
     background: #ffffff47;
-    align-items: center;
+    align-items: normal;
     justify-content: space-between;
    backdrop-filter: blur(10px);
     position: fixed;
