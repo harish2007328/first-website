@@ -88,7 +88,7 @@
   }
   
 #hero .contain:hover {
-    background: linear-gradient(90deg, #ffffff88, #00000088);
+    background: linear-gradient(90deg, #ababab88, #00000088);
 
     position: static;
     display: inline-block;
