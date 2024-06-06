@@ -5,10 +5,9 @@
    
   text-align: center;
   padding: 142px 50px;
-  background: url('D:/first website/pics/background-image.png') no-repeat center center/cover;
   color: #1c1c1c;
   padding-bottom: 30px;
-  
+  background: #bbbbbb;
   justify-content: center;
   align-items: center;
   color: white;
@@ -21,7 +20,7 @@
     background-color: #ffffff47;
    font-weight: bold;
     border-radius: 50px;
-    border: 1px solid #ffffff;
+ 
     backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
