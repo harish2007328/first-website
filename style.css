@@ -1,0 +1,323 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(37, 43, 49);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.053);
+    backdrop-filter: blur(16px);
+    color: #fff;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    border-radius: 200px;
+    position: fixed;
+    z-index: 500;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+img {
+    width: 30px;
+}
+
+.name {
+    font-size: 20px;
+}
+.nav-links {
+    display: flex;
+    z-index: 300;
+    
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .line1 {
+    width: 25px;
+    height: 3px;
+    background-color: #ffa200;
+    border-radius: 5px;
+}
+.hamburger .line2 {
+    width: 20px;
+    height: 3px;
+    background-color: #ff8800;
+    border-radius: 5px;
+}
+.hamburger .line3 {
+    width: 15px;
+    height: 3px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.053);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    right: 20px;
+    left: 20px;
+    position: static;
+    align-items: center;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7b00, #ffb300);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 2s;
+    margin-bottom: 30px;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(45deg, #ffb300, #ff7b00);
+}
+
+.cta-btn:active {
+    filter: blur(0.5em);
+}
+
+ .hero nav  {
+    z-index: 20;
+    list-style-type: none;
+}
+  .hero nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+  }
+  .hero nav ul li a img {
+    width: 25px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        background: linear-gradient(45deg, #ff7b00, #ffb300);
+
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-radius: 30px;
+
+    }
+
+    .nav-links a {
+        padding: 17px 10px;
+        text-align: center;
+        
+       
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+.about {
+    display: block;
+    padding: 100px 20px;
+border: 5px solid rgba(255, 149, 0, 0.863);
+border-bottom: none;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+    color: white;
+    text-align: center;
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    position: static;
+
+}
+
+
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.053);
+    backdrop-filter: blur(32px);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about p {
+    font-size: 12px;
+    margin: 0 auto;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.053);
+    backdrop-filter: blur(32px);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 0%;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+    transition: transform 0.3s;
+}
+
+div.para :hover {
+    transform: translateY(-40px);
+}
+
+div.para {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.services {
+    padding: 100px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    background: url("bg2.svg") no-repeat center center;
+    background-size: cover;
+    border: 5px solid rgba(255, 149, 0, 0.863);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    background: rgba(255, 255, 255, 0.053);
+    backdrop-filter: blur(32px);
+       border: 1px solid rgba(0, 0, 0, 0.159);
+       display: inline-block;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       padding: 5px;
+       border-radius: 10px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    background: rgba(255, 255, 255, 0.053);
+    backdrop-filter: blur(32px);
+       border: 1px solid rgba(0, 0, 0, 0.159);
+
+}
+
+.service-card:hover {
+    transform: translateY(-40px);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}

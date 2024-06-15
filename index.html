@@ -3,139 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>creativeplus.io</title>
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/service.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <title>Advanced Hero Section</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header> 
-        
-        <label class="hamburger">
-            <input type="checkbox">
-            <svg viewBox="0 0 32 32">
-              <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-              <path class="line" d="M7 16 27 16"></path>
-            </svg>
-        </label>
-        <a href="#hero"><div class="name"><img src="pics/logo.png">reative+.io</div></a></li>
-        <nav>
-            <ul>
-                 <li> <a href="https://www.instagram.com/creativeplusdotio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="pics/instagram-icon.png" alt="Instagram"></a> </li>
-                 <li> <a href="https://t.me/cpio03"><img src="pics/Telegram-icon.png" alt="Telegram"></a></li>
-                 <li> <a href="https://wa.me/+918122343394"><img src="pics/whatsapp-icon.png" alt="whatsapp"></a></li>
-
-            </ul>
+    <header>
+        <div class="logo"><img src="logo.png"></div>
+        <div class="name">Creative+.io</div>
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
-
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        
     </header>
 
-    <section id="hero">
-        
+    <section id="hero" class="hero">
+        <div id="particles-js"></div>
         <div class="hero-content">
-            <h1>Transforming Ideas into Stunning Designs</h1>
-            <p>We create unique and impactful designs for your business.</p>
-        </div>
-        <div class="contain">
-            <a href="https://www.instagram.com/creativeplusdotio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button-link">
-                <button class="button">Portfolios</button>
-            </a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>We are a team of passionate designers dedicated to creating beautiful and effective design solutions.</p>
-            <div class="values">
-                <h3>Our Values</h3>
+            <h1 id="dynamic-text"></h1>
+            <p>Your success starts here. Join us and grow your business.</p>
+            <nav>
                 <ul>
-                    <li>Creativity: We strive to bring unique and innovative ideas to life.</li>
-                    <li>Quality: We are committed to delivering top-notch designs that exceed expectations.</li>
-                    <li>Collaboration: We work closely with our clients to understand and meet their needs.</li>
+                     <li> <a href="https://www.instagram.com/creativeplusdotio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram-icon.png" alt="Instagram"></a> </li>
+                     <li> <a href="https://t.me/cpio03"><img src="Telegram-icon.png" alt="Telegram"></a></li>
+                     <li> <a href="https://wa.me/+918122343394"><img src="whatsapp-icon.png" alt="whatsapp"></a></li>
                 </ul>
+            </nav>
+            <a href="#about" class="cta-btn">Scroll</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="abt">
+            <div class="title">
+                <h2>About Us</h2>
             </div>
-            <div class="team">
-                <h3>Meet Our Team</h3>
-                <div class="team-member">
-                    <img src="pics/team-member1.jpg" alt="Team Member 1">
-                    <p>Harish-Owner</p>
-                </div>
+            <div class="para">
+                <p>With a focus on client satisfaction, I bring a unique blend of creativity and technical expertise to each project. My goal is to exceed expectations and deliver outstanding results.</p>
+                <p>I am committed to providing the best services and solutions for my clients. Dedicated to driving innovation and excellence in every project I undertake.</p>
             </div>
         </div>
     </section>
-    <section id="services">
-        <div class="services-content">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <img src="pics/poster-design-icon.png" alt="posters">
-                <h3>Posters & Flyers</h3>
-                <p>Responsive and modern posters & flyers tailored to your needs.</p>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Logos</h3>
+                <p>Crafting unique, impactful logos that represent your brand perfectly.</p>
             </div>
-            <div class="service-item">
-                <img src="pics/graphic-design-icon.png" alt="Logo Design">
-                <h3>Logo Design</h3>
-                <p>Creative graphic design solutions for your brand.</p>
+            <div class="service-card">
+                <h3>Posters</h3>
+                <p>Innovative poster designs that leave a lasting impression.</p>
             </div>
-            <div class="service-item">
-                <img src="pics/digital artworks-icon.png" alt="Digital Artworks">
-                <h3>Digital Artworks</h3>
-                <p>Unique Digital Artworks to help your business stand out.</p>
+            <div class="service-card">
+                <h3>Resume</h3>
+                <p>Deliver personalized resume writing services.</p>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you. Get in touch with us for any inquiries or quotes.</p>
-            <div class="contact-form">
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <button type="submit">Send</button>
-                </form>
+            <div class="service-card">
+                <h3>Photo Editing</h3>
+                <p>Enhancing memories, one photo at a time.</p>
             </div>
-            <div class="contact-details">
-                <p><strong>Email:</strong> creativeplus.io03@gmail.com </p>
-                <p><strong>Phone:</strong> +91 8122343394 </p>
+            <div class="service-card">
+                <h3>Avatar</h3>
+                <p>Designing custom avatars that reflect individual personalities and styles.</p>
+            </div>
+            <div class="service-card">
+                <h3>Thumbnails</h3>
+                <p>Transforms videos with attractive, attention-grabbing thumbnail designs.</p>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-media">
-                    <a href="www.linkedin.com/in/creative-plus-81b49b311"><img src="pics/Linkedin-icon.png" alt="Linkedin"></a>
-                    <a href="https://www.instagram.com/creativeplusdotio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="pics/instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://t.me/cpio03"><img src="pics/Telegram-icon.png" alt="Telegram"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Creative+.io . All Rights Reserved.</p>
-        </div>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
